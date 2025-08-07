@@ -1,0 +1,211 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <link
+      rel="stylesheet"
+      href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
+    />
+    <link
+      rel="stylesheet"
+      href="https://use.fontawesome.com/releases/v5.8.1/css/all.css"
+    />
+    <link
+      href="https://fonts.googleapis.com/css?family=Open+Sans&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="style.css" />
+    <title>Work Day Scheduler</title>
+  </head>
+
+  <body>
+    <header class="jumbotron">
+      <h1 class="display-3 custom-head">Work Day Scheduler</h1>
+      <p class="lead">A simple calendar app for scheduling your work day</p>
+      <p id="currentDay" class="lead"></p>
+    </header>
+    <div class="container schedule-sec">
+      <!-- Timeblocks go here -->
+      <!-- 9 am box -->
+      <section class="row time-box" hour-sect="9">
+        <div class="col-2 col-lg-1 hour">9 am</div>
+        <textarea class="col-8 col-lg-10"></textarea>
+        <button
+          class="
+            col-2 col-lg-1
+            btn btn-block
+            justify-content-center
+            d-flex
+            align-items-center
+            saveBtn
+          "
+        >
+          <i class="fas fa-save"></i>
+        </button>
+      </section>
+
+      <!-- 10 am box -->
+      <section class="row time-box" hour-sect="10">
+        <div class="col-2 col-lg-1 hour align-items-center">10 am</div>
+        <textarea class="col-8 col-lg-10"></textarea>
+        <button
+          class="
+            saveBtn
+            col-2 col-lg-1
+            btn btn-block
+            d-flex
+            align-items-center
+            justify-content-center
+          "
+        >
+          <i class="fas fa-save"></i>
+        </button>
+      </section>
+
+      <!-- 11 am box -->
+      <section class="row time-box" hour-sect="11">
+        <div class="col-2 col-lg-1 hour align-items-center">11 am</div>
+        <textarea class="col-8 col-lg-10"></textarea>
+        <button
+          class="
+            saveBtn
+            col-2 col-lg-1
+            btn btn-block
+            align-items-center
+            d-flex
+            justify-content-center
+          "
+        >
+          <i class="fas fa-save"></i>
+        </button>
+      </section>
+
+      <!-- 12 pm box -->
+      <section class="row time-box" hour-sect="12">
+        <div class="col-2 col-lg-1 hour align-items-center">12 pm</div>
+        <textarea class="col-8 col-lg-10"></textarea>
+        <button
+          class="
+            saveBtn
+            col-2 col-lg-1
+            btn btn-block
+            d-flex
+            align-items-center
+            justify-content-center
+          "
+        >
+          <i class="fas fa-save"></i>
+        </button>
+      </section>
+
+      <!-- 1 pm box -->
+      <section class="row time-box" hour-sect="13">
+        <div class="col-2 col-lg-1 hour align-items-center">1 pm</div>
+        <textarea class="col-8 col-lg-10"></textarea>
+        <button
+          class="
+            saveBtn
+            col-2 col-lg-1
+            btn btn-block
+            d-flex
+            align-items-center
+            justify-content-center
+          "
+        >
+          <i class="fas fa-save"></i>
+        </button>
+      </section>
+
+      <!-- 2 pm box -->
+      <section class="row time-box" hour-sect="14">
+        <div class="col-2 col-lg-1 hour align-items-center">2 pm</div>
+        <textarea class="col-8 col-lg-10"></textarea>
+        <button
+          class="
+            saveBtn
+            col-2 col-lg-1
+            btn btn-block
+            d-flex
+            align-items-center
+            justify-content-center
+          "
+        >
+          <i class="fas fa-save"></i>
+        </button>
+      </section>
+
+      <!-- 3 pm box -->
+      <section class="row time-box" hour-sect="15">
+        <div class="col-2 col-lg-1 hour align-items-center">3 pm</div>
+        <textarea class="col-8 col-lg-10"></textarea>
+        <button
+          class="
+            saveBtn
+            col-2 col-lg-1
+            btn btn-block
+            d-flex
+            align-items-center
+            justify-content-center
+          "
+        >
+          <i class="fas fa-save"></i>
+        </button>
+      </section>
+
+      <!-- 4 pm box -->
+      <section class="row time-box" hour-sect="16">
+        <div class="col-2 col-lg-1 hour align-items-center">4 pm</div>
+        <textarea class="col-8 col-lg-10"></textarea>
+        <button
+          class="
+            saveBtn
+            col-2 col-lg-1
+            btn btn-block
+            d-flex
+            align-items-center
+            justify-content-center
+          "
+        >
+          <i class="fas fa-save"></i>
+        </button>
+      </section>
+
+      <!-- 5 pm box -->
+      <section class="row time-box" hour-sect="17">
+        <div class="col-2 col-lg-1 hour align-items-center">5 pm</div>
+        <textarea class="col-8 col-lg-10"></textarea>
+        <button
+          class="
+            saveBtn
+            col-2 col-lg-1
+            btn btn-block
+            d-flex
+            align-items-center
+            justify-content-center
+          "
+        >
+          <i class="fas fa-save"></i>
+        </button>
+      </section>
+      <!-- <div class="clear-sec">
+        <button
+          class="
+            col-2 col-lg-1
+            btn btn-block
+            align-items-center
+            justify-content-center
+            clearBtn
+          "
+        >
+          Clear
+        </button>
+      </div> -->
+    </div>
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/moment.js/2.24.0/moment.min.js"></script>
+    <script src="script.js"></script>
+  </body>
+</html>
